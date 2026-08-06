@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uid.drayker.org/sitemap.xml
