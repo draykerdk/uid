@@ -2,16 +2,22 @@
 # Source: https://github.com/draykerdk/drayker-theme
 remote_theme: draykerdk/drayker-theme
 
+# Set explicitly: GitHub Pages derives site.url without TLS when the certificate is
+# terminated upstream, which leaves absolute URLs in meta tags on http. Everything the
+# sitemap and the social cards emit has to be the canonical https address.
+url: "https://uid.drayker.org"
+
 plugins:
   - jekyll-remote-theme
   - jekyll-optional-front-matter
+  - jekyll-sitemap
 
-title: UID
-description: Universal Identity Drayker — the identity layer and primary interface proposed for the platform's applications.
+title: "UID"
+description: "Universal Identity Drayker — the identity layer and primary interface proposed for the platform's applications."
 
-dk_kicker: Identity layer
-dk_subdomain: uid.drayker.org
-dk_repo: https://github.com/draykerdk/uid
+dk_kicker: "Identity layer"
+dk_subdomain: "uid.drayker.org"
+dk_repo: "https://github.com/draykerdk/uid"
 
 defaults:
   - scope:
