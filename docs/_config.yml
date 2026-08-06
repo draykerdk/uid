@@ -1,14 +1,20 @@
-#
-#      _____ _ __          _____      __  __  _
-#     / ___/(_) /____     / ___/___  / /_/ /_(_)___  ____ ______
-#     \__ \/ / __/ _ \    \__ \/ _ \/ __/ __/ / __ \/ __ `/ ___/
-#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  )
-#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/
-#                                                 /____/
-#
-# Title of your website
-title: 'UID'
+# The Drayker documentation theme — one layout shared by every *.drayker.org site.
+# Source: https://github.com/draykerdk/drayker-theme
+remote_theme: draykerdk/drayker-theme
 
-# The slogan describes your website and is used on homepage in <title> and other important places
-slogan: 'Universal identity'
+plugins:
+  - jekyll-remote-theme
+  - jekyll-optional-front-matter
 
+title: UID
+description: Universal Identity Drayker — the identity layer and primary interface proposed for the platform's applications.
+
+dk_kicker: Identity layer
+dk_subdomain: uid.drayker.org
+dk_repo: https://github.com/draykerdk/uid
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
