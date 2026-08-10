@@ -1,0 +1,32 @@
+schema_version: 1
+component:
+  id: uid
+  name: UID
+  layer: PLATFORM
+  artifact_type: architecture
+  problem: Define an identity layer and primary interface for applications in the proposed Drayker platform.
+  scope:
+    - Public direction for identity and application interaction.
+    - Interfaces that future UID specifications need to address.
+  non_scope:
+    - A deployed identity provider.
+    - A stable identity protocol or application platform.
+  dependencies:
+    - dk
+    - living-cryptography
+  implementation:
+    level: none
+    scope: UID is a documented design direction and does not currently provide a service or executable protocol.
+    evidence:
+      - type: document
+        ref: docs/README.md
+  risks:
+    - Identity claims have privacy and security consequences that are not yet specified.
+    - Platform language may be confused with an available product.
+  contributions:
+    availability: open
+    entrypoint: https://github.com/draykerdk/uid/issues
+  source_of_truth:
+    repository: https://github.com/draykerdk/uid
+    path: docs/README.md
+  last_reviewed: "2026-08-10"
