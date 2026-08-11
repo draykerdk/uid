@@ -2,6 +2,12 @@ UID — Universal Identity Drayker — is the primary system design for identity
 
 One identity that can move through many applications without losing its context, its history or its contributions.
 
+## Why this exists
+
+Drayker is a way of working where people keep creating, discovering and learning while intelligence carries the rest, and what results reaches the work that produced it. UID is how a person stays one person across all of it, and how what they contribute stays attributable to them.
+
+The argument in full is on the [manifesto](https://drayker.org/manifesto/); the [economy page](https://drayker.org/economy/) states plainly what contributing here earns and what it does not.
+
 ## Role in the system
 
 - **Identity** — a shared model so that applications recognise a participant the same way instead of each inventing its own account.
@@ -18,9 +24,9 @@ Nothing here is specified yet. For a system whose entire premise is that strange
 
 ## Contributing
 
-Open an issue. Prior art, objections and threat models are as welcome as proposals. Issues small enough for one person to finish carry the `open-function` label and appear on the board at [drayker.org](https://drayker.org/#org/fn).
+Open an issue. Prior art, objections and threat models are as welcome as proposals. Issues small enough for one person to finish carry the `open-function` label and appear on the board at [drayker.org](https://drayker.org/fn/).
 
-Related: [`dk`](https://dk.drayker.org) · [`daf`](https://daf.drayker.org) · the [ecosystem map](https://drayker.org/#org/eco)
+Related: [`dk`](https://dk.drayker.org) · [`daf`](https://daf.drayker.org) · the [ecosystem map](https://drayker.org/eco/)
 
 ---
 
