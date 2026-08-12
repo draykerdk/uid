@@ -8,13 +8,15 @@ Drayker is a way of working where people keep creating, discovering and learning
 
 The argument in full is on the [manifesto](https://drayker.org/manifesto/). The [economy page](https://drayker.org/economy/) states plainly what contributing here earns and what it does not.
 
-## Role in the system
+## How it fits the whole
+
+Drayker's premise is that strangers can cooperate at scale. That only works if contribution is attributable — and UID is what makes it attributable.
 
 - **Identity**. A shared model so that applications recognise a participant the same way instead of each inventing its own account.
 - **Interface**. UID is described as the primary interface for applications built across the platform.
 - **Continuity**. Identity, context and contribution stay connected as people move between systems.
 
-It sits on the [Dk](https://dk.drayker.org) foundation and connects to [DAF](https://daf.drayker.org), where contribution turns into federative points and voting power.
+Every layer of the ecosystem leans on this. The [Dk](https://dk.drayker.org) foundation uses it to attribute what each agent and person does. [Dk Personal](https://personal.drayker.org) binds the personal agent to the person's identity. The [Academy](https://academy.drayker.org) shapes formation and curriculum against the profile. Volunteer levels and universal basic income in [distributed support](https://support.drayker.org) are evaluated against identity, profile and participation. [Open science](https://science.drayker.org) makes identity and consent the entry condition. [PAP](https://pap.drayker.org) keeps participation attributable inside projects. And in [DAF](https://daf.drayker.org), contribution turns into federative points and voting power.
 
 ## State of this documentation
 
