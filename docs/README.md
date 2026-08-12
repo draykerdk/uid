@@ -1,4 +1,4 @@
-UID — Universal Identity Drayker — is the primary system design for identity: the super app meant to serve as the basis for the applications built on the Drayker platform.
+UID, Universal Identity Drayker, is the primary system design for identity: the super app meant to serve as the basis for the applications built on the Drayker platform.
 
 One identity that can move through many applications without losing its context, its history or its contributions.
 
@@ -6,13 +6,13 @@ One identity that can move through many applications without losing its context,
 
 Drayker is a way of working where people keep creating, discovering and learning while intelligence carries the rest, and what results reaches the work that produced it. UID is how a person stays one person across all of it, and how what they contribute stays attributable to them.
 
-The argument in full is on the [manifesto](https://drayker.org/manifesto/); the [economy page](https://drayker.org/economy/) states plainly what contributing here earns and what it does not.
+The argument in full is on the [manifesto](https://drayker.org/manifesto/). The [economy page](https://drayker.org/economy/) states plainly what contributing here earns and what it does not.
 
 ## Role in the system
 
-- **Identity** — a shared model so that applications recognise a participant the same way instead of each inventing its own account.
-- **Interface** — UID is described as the primary interface for applications built across the platform.
-- **Continuity** — identity, context and contribution stay connected as people move between systems.
+- **Identity**. A shared model so that applications recognise a participant the same way instead of each inventing its own account.
+- **Interface**. UID is described as the primary interface for applications built across the platform.
+- **Continuity**. Identity, context and contribution stay connected as people move between systems.
 
 It sits on the [Dk](https://dk.drayker.org) foundation and connects to [DAF](https://daf.drayker.org), where contribution turns into federative points and voting power.
 
@@ -20,7 +20,7 @@ It sits on the [Dk](https://dk.drayker.org) foundation and connects to [DAF](htt
 
 This is a design direction and an open room, not a service you can sign in to. The repository exists so the model can be discussed, researched and documented in public: important questions about universal identity, documentation, proposals, research and data all belong in its issues.
 
-Nothing here is specified yet. For a system whose entire premise is that strangers can cooperate, how identity works is not a detail to postpone — which is exactly why the discussion is public.
+Nothing here is specified yet. For a system whose entire premise is that strangers can cooperate, how identity works is not a detail to postpone. Which is exactly why the discussion is public.
 
 ## Contributing
 
