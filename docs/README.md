@@ -1,4 +1,4 @@
-UID, Universal Identity Drayker, is the primary system design for identity: the primary interface meant to serve as the basis for the applications built on the Drayker platform.
+UID, Universal Identity for Drayker, is the primary system design for identity: the primary interface meant to serve as the basis for the applications built on the Drayker platform.
 
 One identity that can move through many applications without losing its context, its history or its contributions.
 
