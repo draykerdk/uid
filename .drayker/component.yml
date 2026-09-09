@@ -19,7 +19,7 @@ component:
     - living-cryptography
     - pap
   implementation:
-    level: prototype
+    level: none
     scope: UID specifies the 3-layer architectural model and safeguards; cryptographic execution tooling remains in research and development.
     evidence:
       - type: document
