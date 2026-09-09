@@ -4,29 +4,33 @@ component:
   name: UID
   layer: PLATFORM
   artifact_type: architecture
-  problem: Define an identity layer and primary interface for applications in the proposed Drayker platform.
+  problem: Define identity, agentic delegation, and reputation architecture that separates cryptographic personhood, bounded autonomous proxies, and contextual reputation clusters without surveillance or financialization.
   scope:
-    - Public direction for identity and application interaction.
-    - Interfaces that future UID specifications need to address.
+    - Public specification for 3-layer identity (cryptographic personhood, bounded proxy agents, and contextual reputation).
+    - Zero-knowledge proofs of authenticated presence and pairwise non-correlation.
+    - Bounded agentic delegation rules and Situated Contextual Veto.
+    - Non-transferable, domain-segmented reputation clusters.
   non_scope:
-    - A deployed identity provider.
-    - A stable identity protocol or application platform.
+    - A centralized identity provider or biometric database.
+    - A monolithic social credit score or financialized reputation markets.
+    - An operational application platform today.
   dependencies:
     - dk
     - living-cryptography
+    - pap
   implementation:
-    level: none
-    scope: UID is a documented design direction and does not currently provide a service or executable protocol.
+    level: prototype
+    scope: UID specifies the 3-layer architectural model and safeguards; cryptographic execution tooling remains in research and development.
     evidence:
       - type: document
-        ref: docs/README.md
+        ref: README.md
   risks:
-    - Identity claims have privacy and security consequences that are not yet specified.
-    - Platform language may be confused with an available product.
+    - Misinterpreting representative proxy agents as legal or constitutional personhood.
+    - Premature correlation of pairwise identities across distinct domains.
   contributions:
     availability: open
     entrypoint: https://github.com/draykerdk/uid/issues
   source_of_truth:
     repository: https://github.com/draykerdk/uid
-    path: docs/README.md
-  last_reviewed: "2026-09-05"
+    path: README.md
+  last_reviewed: "2026-09-08"
