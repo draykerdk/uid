@@ -1,6 +1,6 @@
 # UID
 
-> Universal Identity Drayker — the identity layer and primary interface proposed for the platform's applications.
+> UID separates the person, the agent authorised to act for them and the record of their contributions. It proposes identity and attribution that preserve personal authority across the ecosystem.
 
 UID is a public component of Drayker. Drayker is the system; Dk is its intelligence; Dk Network is its network.
 

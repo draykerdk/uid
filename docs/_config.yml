@@ -13,7 +13,7 @@ plugins:
   - jekyll-sitemap
 
 title: "UID"
-description: "Universal Identity Drayker — the identity layer and primary interface proposed for the platform's applications."
+description: "Identity, revocable representation and contextual contribution records. UID separates the person, the agent authorised to act for them and the record of their contributions. It proposes identity and attribution that preserve personal authority across the ecosystem."
 
 dk_kicker: "Identity layer"
 dk_subdomain: "uid.drayker.org"
