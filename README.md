@@ -1,90 +1,49 @@
-# UID — Universal Identity Drayker
+# UID
 
-> Self-sovereign human identity, agentic proxy delegation, and contextual reputation without panopticon surveillance.
+> Identity, revocable representation and contextual contribution records.
 
-UID is the architectural specification for identity, representation, and attribution across the Drayker ecosystem. As established in *Do animal à superinteligência* (Chapters 34–38, 41–43), sustainable human sovereignty in the age of autonomous machines requires an absolute structural separation between who a person is, how their software acts on their behalf, and how their contributions are recognized.
+UID separates the person, the agent authorised to act for them and the record of their contributions. It proposes identity and attribution that preserve personal authority across the ecosystem.
 
----
+An account, an automated representative and a contribution history answer different questions. Combining them can obscure consent and turn a limited record into a judgement of the whole person.
 
-## 1. The Three Structural Layers
+## Three distinct responsibilities
 
-UID decomposes "identity" into three distinct, non-fungible layers to prevent bureaucratic capture, behavioral profiling, and algorithmic totalitarianism:
+### The person and their cryptographic identity
 
-```
-┌────────────────────────────────────────────────────────────────────────┐
-│ 1. CRYPTOGRAPHIC ROOT (Self-Sovereign Personhood)                      │
-│    Zero-knowledge proofs, ephemeral session keys, non-correlatable     │
-│    pairwise identifiers. No central registry, no biometric lock-in.   │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │ Authorizes & mandates
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 2. REPRESENTATIVE PROXY AGENT (Bounded Agency)                         │
-│    Local and edge autonomous agents operating on the member's behalf.  │
-│    Executes routines, negotiates tasks, carries revocable mandates.    │
-│    *The proxy is an instrument, never the sovereign human.*            │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │ Delivers verified work
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│ 3. CONTEXTUAL REPUTATION CLUSTERS (Empirical Domain Lineage)          │
-│    Verified track record earned through delivered functions.           │
-│    Segmented by domain; cannot be aggregated into a single score.      │
-│    *Non-transferable, non-financializable, cannot be bought.*          │
-└────────────────────────────────────────────────────────────────────────┘
-```
+The identity layer should let a member authenticate and demonstrate the credentials needed for an interaction while disclosing only the required information. The proposal explores zero-knowledge proofs and separate identifiers for different relationships. Their protection depends on protocol design, metadata exposure, recovery procedures and implementation; distinct keys alone do not prevent every form of correlation.
 
-### 1.1 Layer 1: Cryptographic Identity (Self-Sovereign Personhood)
-- **Zero-Knowledge Validity:** Proof of authenticated presence ([PAP](https://pap.drayker.org)) and credential verification without revealing real-world identities, biometric records, or central registry identifiers.
-- **Pairwise Non-Correlation:** Separate interactions utilize distinct cryptographic pairwise keys, mathematically preventing platforms from constructing an omnipresent behavioral dossier.
-- **Inalienable Primacy:** Human sovereignty precedes any protocol. An identity cannot be revoked or locked out by automated algorithmic enforcement.
+A person's standing as a member is distinct from the state of a credential. Lost keys, compromised devices and contested access require recovery and human recourse. Automated enforcement must not become a way to erase the person or make their basic rights contingent on a technical record.
 
-### 1.2 Layer 2: Representative Proxy Agent (Bounded Agency)
-- **Delegated Execution:** A member's personal agent ([Dk Personal](https://github.com/draykerdk/dk-personal)) acts as an authorized proxy in network negotiations, assembly coordination, and automated workflows.
-- **Strict Bounded Mandates:** Proxies operate under explicit, revocable parameters defined by the member. A proxy cannot commit a member to irreversible constitutional liabilities without active cryptographic sign-off.
-- **Instrument vs. Human:** A proxy is a tool for thought and execution. It possesses zero legal, moral, or constitutional personhood within the ecosystem.
+### The agent and its mandate
 
-### 1.3 Layer 3: Contextual Reputation Clusters (Empirical Lineage)
-- **Domain Segmentation:** Reputation is earned through verifiable delivered functions ([DFMP](https://dfmp.drayker.org)). A high reputation in cryptographic auditing grants zero unearned authority in biomedical research or economic parameter design.
-- **No Monolithic Social Credit:** UID explicitly prohibits the collapse of multi-dimensional human contributions into a single scalar "social credit" or "worthiness" score.
-- **Strict Anti-Financialization:** Reputation cannot be bought, sold, rented, staked for passive return, or transferred. Financial contribution (such as holding or donating Dktron) grants zero reputation and zero voting leverage.
+A [Dk Personal](https://personal.drayker.org) agent may act as a proxy within permissions the member gives it. A mandate should state its scope, limits and duration, and provide a way to revoke it. Actions that exceed those limits need renewed authorisation. The agent represents the person within that mandate; constitutional authority remains with the person.
 
----
+A useful worked case would show a mandate being issued, used, withdrawn and checked by another participant before a later action is accepted. That sequence must be demonstrated in the protocol, including what happens during disconnection or delayed revocation delivery.
 
-## 2. Inalienable Human Safeguards
+### Contributions in context
 
-1. **Vital Floor Independence:** Basic support, access to public knowledge, and participation rights are never contingent upon reputation metrics. Human dignity is not an earned privilege.
-2. **Right to Metacognitive Defusion and Privacy:** As detailed in *Do animal à superinteligência*, a person has the absolute right to internal contradiction, doubt, rest, and complete absence from public attribution. Private personal growth is never extracted as network collateral.
-3. **Situated Contextual Veto:** The member retains the sovereign right to halt any automated action executed within their immediate bodily, cognitive, or domestic perimeter.
+Reputation records concern evidence of contribution within a domain. They should preserve enough context to evaluate the work and correct errors. Expertise in one field does not by itself establish authority in another, and the proposal rejects a single score purporting to measure a person's worth.
 
----
+Reputation cannot be purchased or transferred. Holding financial capacity does not buy constitutional voice. The current proposal also excludes financial contribution from reputation; any refinement of how material contributions are documented belongs in an explicit governance proposal. Basic support and participation rights remain independent of those records.
 
-## 3. Scope & Non-Scope
+## Personal authority and review
 
-### Scope
-- Architecture and interfaces for zero-knowledge self-sovereign authentication.
-- Bounded delegation protocols between human keys and autonomous proxy agents.
-- Specifications for isolated, domain-specific contextual reputation graphs.
-- Non-correlatable multi-persona cryptographic signing standards.
+UID supports the member's authority over their body, private context and delegated actions. A situated refusal must be assessed in its actual scope, including any effects on other members and shared commitments. The [independent member panel](https://advices.drayker.org) is the proposed human review path for contested decisions.
 
-### Non-Scope
-- Centralized KYC/AML database integration.
-- Monolithic credit scoring, surveillance telemetry, or behavioral tracking.
-- Tokenized identity NFTs or financialized reputation markets.
+Privacy includes room to rest, reconsider and keep personal exploration outside public attribution. The specification must explain how consent, disclosure and record correction are carried across connected systems.
 
----
+## How UID connects to the ecosystem
 
-## 4. Ecosystem Dependencies
+[Projects & Applications (PAP)](https://pap.drayker.org) would use UID for attributable participation in projects. PAP names that project environment; it does not name a proof-of-personhood protocol. Personhood verification remains an identity-design question to specify and evaluate here.
 
-- **[`living-cryptography`](https://lc.drayker.org):** Cryptographic primitives, verifiable sortition, and zero-knowledge relation proofs.
-- **[`dk-personal`](https://github.com/draykerdk/dk-personal):** The local personal agent executing proxy mandates under human attention sovereignty.
-- **[`pap`](https://pap.drayker.org):** Proof of Authenticated Presence verifying living human uniqueness without centralized biometrics.
-- **[`value-unit`](https://value.drayker.org):** Strict separation between economic capacity (Dktron) and constitutional voice (UID).
+[Living Cryptography](https://lc.drayker.org) researches relevant security mechanisms. [Dk Personal](https://personal.drayker.org) develops the personal proxy, and [Value Unit](https://value.drayker.org) preserves the distinction between material capacity and constitutional standing.
 
----
+## What needs to be demonstrated
 
-## 5. Governance & Contribution
+The published architecture requires protocol work and evaluation. Priority cases are credential recovery, bounded delegation and revocation, selective disclosure, resistance to correlation, and correction of a contextual contribution record. Each needs explicit assumptions, failure cases and an accessible review path.
 
-Drayker is an open, primarily volunteer R&D initiative. The current founding-phase governance is documented in [`draykerdk/.github`](https://github.com/draykerdk/.github/blob/master/GOVERNANCE.md). Public proposals follow [DFMP](https://dfmp.drayker.org).
+## Participation and sources
 
-Content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+This repository develops a proposal through public documentation and review. Read the [contribution guide](https://github.com/draykerdk/.github/blob/master/CONTRIBUTING.md) and [current governance](https://github.com/draykerdk/.github/blob/master/GOVERNANCE.md), or find a bounded contribution on the [open-functions board](https://drayker.org/fn/).
+
+Part of [Drayker](https://drayker.org). Content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
