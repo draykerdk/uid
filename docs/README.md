@@ -1,35 +1,49 @@
-UID, Universal Identity for Drayker, is the primary system design for identity: the primary interface meant to serve as the basis for the applications built on the Drayker platform.
+# UID
 
-One identity that can move through many applications without losing its context, its history or its contributions.
+> Identity, revocable representation and contextual contribution records.
 
-## Why this exists
+UID separates the person, the agent authorised to act for them and the record of their contributions. It proposes identity and attribution that preserve personal authority across the ecosystem.
 
-Drayker is a way of working where people keep creating, discovering and learning while intelligence carries the rest, and what results reaches the work that produced it. UID is how a person stays one person across all of it, and how what they contribute stays attributable to them.
+An account, an automated representative and a contribution history answer different questions. Combining them can obscure consent and turn a limited record into a judgement of the whole person.
 
-The argument in full is on the [manifesto](https://drayker.org/manifesto/). The [economy page](https://drayker.org/economy/) states plainly what contributing here earns and what it does not.
+## Three distinct responsibilities
 
-## How it fits the whole
+### The person and their cryptographic identity
 
-Drayker's premise is that strangers can cooperate at scale. That only works if contribution is attributable — and UID is what makes it attributable.
+The identity layer should let a member authenticate and demonstrate the credentials needed for an interaction while disclosing only the required information. The proposal explores zero-knowledge proofs and separate identifiers for different relationships. Their protection depends on protocol design, metadata exposure, recovery procedures and implementation; distinct keys alone do not prevent every form of correlation.
 
-- **Identity**. A shared model so that applications recognise a participant the same way instead of each inventing its own account.
-- **Interface**. UID is described as the primary interface for applications built across the platform.
-- **Continuity**. Identity, context and contribution stay connected as people move between systems.
+A person's standing as a member is distinct from the state of a credential. Lost keys, compromised devices and contested access require recovery and human recourse. Automated enforcement must not become a way to erase the person or make their basic rights contingent on a technical record.
 
-Every layer of the ecosystem leans on this. The [Dk](https://dk.drayker.org) system uses it to preserve attribution while keeping agent action distinct from member action. [Dk Personal](https://personal.drayker.org) binds the personal agent to the person's identity and consent boundaries. The [Academy](https://academy.drayker.org) can personalize formation without turning one profile into a gate or a welfare score. [Distributed Support](https://support.drayker.org) can preserve continuity when a member seeks ways to satisfy needs locally or across the global system, while keeping consent and eligibility distinct from one score; infrastructure contribution is only one branch of that program. [Open science](https://science.drayker.org) makes identity and consent the entry condition. [PAP](https://pap.drayker.org) keeps participation attributable inside projects. In transitional [DAF](https://daf.drayker.org) experiments, delivered functions may create federative points and bounded voting weight; those points are not general reputation and do not automatically govern support elsewhere.
+### The agent and its mandate
 
-## State of this documentation
+A [Dk Personal](https://personal.drayker.org) agent may act as a proxy within permissions the member gives it. A mandate should state its scope, limits and duration, and provide a way to revoke it. Actions that exceed those limits need renewed authorisation. The agent represents the person within that mandate; constitutional authority remains with the person.
 
-This is a design direction and an open room, not a service you can sign in to. The repository exists so the model can be discussed, researched and documented in public: important questions about universal identity, documentation, proposals, research and data all belong in its issues.
+A useful worked case would show a mandate being issued, used, withdrawn and checked by another participant before a later action is accepted. That sequence must be demonstrated in the protocol, including what happens during disconnection or delayed revocation delivery.
 
-Nothing here is specified yet. For a system whose entire premise is that strangers can cooperate, how identity works is not a detail to postpone. Which is exactly why the discussion is public.
+### Contributions in context
 
-## Contributing
+Reputation records concern evidence of contribution within a domain. They should preserve enough context to evaluate the work and correct errors. Expertise in one field does not by itself establish authority in another, and the proposal rejects a single score purporting to measure a person's worth.
 
-Open an issue. Prior art, objections and threat models are as welcome as proposals. Issues small enough for one person to finish carry the `open-function` label and appear on the board at [drayker.org](https://drayker.org/fn/).
+Reputation cannot be purchased or transferred. Holding financial capacity does not buy constitutional voice. The current proposal also excludes financial contribution from reputation; any refinement of how material contributions are documented belongs in an explicit governance proposal. Basic support and participation rights remain independent of those records.
 
-Related: [`dk`](https://dk.drayker.org) · [`daf`](https://daf.drayker.org) · the [ecosystem map](https://drayker.org/eco/)
+## Personal authority and review
 
----
+UID supports the member's authority over their body, private context and delegated actions. A situated refusal must be assessed in its actual scope, including any effects on other members and shared commitments. The [independent member panel](https://advices.drayker.org) is the proposed human review path for contested decisions.
 
-Content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Drayker's work is primarily voluntary.
+Privacy includes room to rest, reconsider and keep personal exploration outside public attribution. The specification must explain how consent, disclosure and record correction are carried across connected systems.
+
+## How UID connects to the ecosystem
+
+[Projects & Applications (PAP)](https://pap.drayker.org) would use UID for attributable participation in projects. PAP names that project environment; it does not name a proof-of-personhood protocol. Personhood verification remains an identity-design question to specify and evaluate here.
+
+[Living Cryptography](https://lc.drayker.org) researches relevant security mechanisms. [Dk Personal](https://personal.drayker.org) develops the personal proxy, and [Value Unit](https://value.drayker.org) preserves the distinction between material capacity and constitutional standing.
+
+## What needs to be demonstrated
+
+The published architecture requires protocol work and evaluation. Priority cases are credential recovery, bounded delegation and revocation, selective disclosure, resistance to correlation, and correction of a contextual contribution record. Each needs explicit assumptions, failure cases and an accessible review path.
+
+## Participation and sources
+
+This repository develops a proposal through public documentation and review. Read the [contribution guide](https://github.com/draykerdk/.github/blob/master/CONTRIBUTING.md) and [current governance](https://github.com/draykerdk/.github/blob/master/GOVERNANCE.md), or find a bounded contribution on the [open-functions board](https://drayker.org/fn/).
+
+Part of [Drayker](https://drayker.org). Content licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
