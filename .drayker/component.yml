@@ -10,12 +10,14 @@ component:
     - Zero-knowledge proofs of authenticated presence and pairwise non-correlation.
     - Bounded agentic delegation rules and Situated Contextual Veto.
     - Non-transferable, domain-segmented reputation clusters.
+    - The veto chain, a signed, hash-linked, append-only record of vetoes, mandate revocations, ratification signatures and panel orders, replicated over Dk Network.
   non_scope:
     - A centralized identity provider or biometric database.
     - A monolithic social credit score or financialized reputation markets.
     - An operational application platform today.
   dependencies:
     - dk
+    - dk-network
     - living-cryptography
     - pap
   implementation:
@@ -27,10 +29,11 @@ component:
   risks:
     - Misinterpreting representative proxy agents as legal or constitutional personhood.
     - Premature correlation of pairwise identities across distinct domains.
+    - Veto-chain entries exposing private reasons instead of proofs of standing and scope.
   contributions:
     availability: open
     entrypoint: https://github.com/draykerdk/uid/issues
   source_of_truth:
     repository: https://github.com/draykerdk/uid
     path: README.md
-  last_reviewed: "2026-09-08"
+  last_reviewed: "2026-09-25"
