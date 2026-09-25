@@ -32,6 +32,32 @@ UID supports the member's authority over their body, private context and delegat
 
 Privacy includes room to rest, reconsider and keep personal exploration outside public attribution. The specification must explain how consent, disclosure and record correction are carried across connected systems.
 
+## The veto chain
+
+A veto only protects anyone if it cannot be lost, forged or quietly ignored, and it only teaches the system something if it carries its reasons. The proposal records every act of constitutional authority as a signed entry in a shared, append-only chain of signatures — blockchain-style, but carried by the Drayker architecture rather than by an external token network.
+
+**What enters the chain.** A situated veto, a justified veto against a collective decision, the revocation of a mandate, a member's signature on a constitutional ratification, an order of the [independent member panel](https://advices.drayker.org), and the outcome of every triage described below. The contested decision is referenced by its cryptographic address: in the [Dk Network](https://dknetwork.drayker.org) architecture every function, module and block of information already has a unique address derived from a signature, so a veto points at exactly the decision it contests.
+
+**A veto comes with its grounds.** Every veto carries its real justification: the intention and the motives behind it, the scope it claims — which action, who is affected, what interrupting it would cost others — and the facts or conditions it rests on. A veto without reasons teaches the system nothing; a veto with reasons can reveal a condition no data showed. The author can stay anonymous: the entry proves that its signer is a member with standing in the affected context without revealing who they are. Anonymity protects the person, never the absence of reasons. Where the grounds touch someone's body, home or private context, those details can be sealed so that only the triage examining them can read them — they are still weighed.
+
+**How vetoes are weighed.** Vetoes are not counted like votes. Their grounds are weighed together: the intentions and motives each one carries, each person's relation to the decision, the certainty on each side and what the vetoes reveal in common. A person counts once, however many contexts they belong to. Many vetoes repeating the same grounds add weight to those grounds, not new information. And one veto can be enough: when its grounds bring information beyond the scope considered before the decision was taken, it can by itself lead to an adjustment — an exception, a narrower scope, a new test or the revision of the rule.
+
+**Advanced triage.** Because a single well-founded veto can change a decision, its grounds pass through safeguards before they do:
+
+- **verification** of the facts claimed, against records, sensors and independent sources, and with the people and local Dks of the affected context;
+- **interpretation** of what the new information actually means for this decision, not only whether it is true;
+- **detection** of error, misunderstanding and manipulation, including coordinated vetoes and fabricated grounds;
+- **proportion**: a bounded test or a temporary exception before a general change;
+- **human recourse**: a contested triage goes to the independent member panel.
+
+The triage outcome is appended to the chain with its own reasons, so whoever vetoed can see how their grounds were read. A veto that does not pass triage stays in the record and can be reconsidered when new evidence appears.
+
+**How the chain survives failure.** No node holds the chain alone. It is replicated across Dk Network nodes and accepted by propagation: independent nodes on the route — at least three, the same threshold the network uses to authenticate modules — check the signature, the standing of the signer and the link to the previous entry before relaying it. [Living Cryptography](https://lc.drayker.org) protects the channels between them. A device can sign while disconnected; the entry propagates on reconnection with its original order preserved. Conflicting histories are not silently resolved by majority: they are kept visible and sent to the panel.
+
+**What it binds.** Before executing a decision, the operational layer — Dk Global included — checks the chain for vetoes against that decision's address and for the state of their triage. A justified veto obliges the decision to be revised until consensus; an action that ignores one is detectable by any node, because the veto and the action carry the same address. Constitutional ratifications need member signatures and independent keys that no Dk process holds: Dk Global can append a proposal to the chain, never a ratification.
+
+**Where it runs today.** Nowhere yet. The closest working precedent is the DAF's Phase 0, where Git history is the ledger and anyone can recompute it ([DAF-001](https://github.com/draykerdk/daf/blob/master/dafp/daf-001-phase-0-github-federation.md)). The veto chain is a requirement for the stage in which a well-deployed Dk Global can no longer be switched off and the justified veto becomes the switch — so it has to exist, and be tested, before that stage.
+
 ## How UID connects to the ecosystem
 
 [Projects & Applications (PAP)](https://pap.drayker.org) would use UID for attributable participation in projects. PAP names that project environment; it does not name a proof-of-personhood protocol. Personhood verification remains an identity-design question to specify and evaluate here.
@@ -40,7 +66,7 @@ Privacy includes room to rest, reconsider and keep personal exploration outside 
 
 ## What needs to be demonstrated
 
-The published architecture requires protocol work and evaluation. Priority cases are credential recovery, bounded delegation and revocation, selective disclosure, resistance to correlation, and correction of a contextual contribution record. Each needs explicit assumptions, failure cases and an accessible review path.
+The published architecture requires protocol work and evaluation. Priority cases are credential recovery, bounded delegation and revocation, selective disclosure, resistance to correlation, correction of a contextual contribution record, and one veto carried end to end: signed offline with its grounds, propagated, checked by independent nodes, triaged, and honoured by the layer that would have executed the contested decision. Each needs explicit assumptions, failure cases and an accessible review path.
 
 ## Participation and sources
 
