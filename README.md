@@ -28,7 +28,7 @@ Reputation cannot be purchased or transferred. Holding financial capacity does n
 
 ## Personal authority and review
 
-UID supports the member's authority over their body, private context and delegated actions. A situated refusal must be assessed in its actual scope, including any effects on other members and shared commitments. The [independent member panel](https://advices.drayker.org) is the proposed human review path for contested decisions.
+UID supports the member's authority over their body, private context and delegated actions. A situated refusal must be assessed in its actual scope, including any effects on other members and shared commitments. [Member councils](https://advices.drayker.org), convened for each question, are the proposed human review path for contested decisions.
 
 Privacy includes room to rest, reconsider and keep personal exploration outside public attribution. The specification must explain how consent, disclosure and record correction are carried across connected systems.
 
@@ -36,7 +36,7 @@ Privacy includes room to rest, reconsider and keep personal exploration outside 
 
 A veto only protects anyone if it cannot be lost, forged or quietly ignored, and it only teaches the system something if it carries its reasons. The proposal records every act of constitutional authority as a signed entry in a shared, append-only chain of signatures — blockchain-style, but carried by the Drayker architecture rather than by an external token network.
 
-**What enters the chain.** A situated veto, a justified veto against a collective decision, the revocation of a mandate, a member's signature on a constitutional ratification, an order of the [independent member panel](https://advices.drayker.org), and the outcome of every triage described below. The contested decision is referenced by its cryptographic address: in the [Dk Network](https://dknetwork.drayker.org) architecture every function, module and block of information already has a unique address derived from a signature, so a veto points at exactly the decision it contests.
+**What enters the chain.** A situated veto, a justified veto against a collective decision, the revocation of a mandate, a member's signature on a constitutional ratification, the conclusion of a [member council](https://advices.drayker.org), and the outcome of every triage described below. The contested decision is referenced by its cryptographic address: in the [Dk Network](https://dknetwork.drayker.org) architecture every function, module and block of information already has a unique address derived from a signature, so a veto points at exactly the decision it contests.
 
 **A veto comes with its grounds.** Every veto carries its real justification: the intention and the motives behind it, the scope it claims — which action, who is affected, what interrupting it would cost others — and the facts or conditions it rests on. A veto without reasons teaches the system nothing; a veto with reasons can reveal a condition no data showed. The author can stay anonymous: the entry proves that its signer is a member with standing in the affected context without revealing who they are. Anonymity protects the person, never the absence of reasons. Where the grounds touch someone's body, home or private context, those details can be sealed so that only the triage examining them can read them — they are still weighed.
 
@@ -48,11 +48,11 @@ A veto only protects anyone if it cannot be lost, forged or quietly ignored, and
 - **interpretation** of what the new information actually means for this decision, not only whether it is true;
 - **detection** of error, misunderstanding and manipulation, including coordinated vetoes and fabricated grounds;
 - **proportion**: a bounded test or a temporary exception before a general change;
-- **human recourse**: a contested triage goes to the independent member panel.
+- **human recourse**: a contested triage goes to a member council convened for that question.
 
 The triage outcome is appended to the chain with its own reasons, so whoever vetoed can see how their grounds were read. A veto that does not pass triage stays in the record and can be reconsidered when new evidence appears.
 
-**How the chain survives failure.** No node holds the chain alone. It is replicated across Dk Network nodes and accepted by propagation: independent nodes on the route — at least three, the same threshold the network uses to authenticate modules — check the signature, the standing of the signer and the link to the previous entry before relaying it. [Living Cryptography](https://lc.drayker.org) protects the channels between them. A device can sign while disconnected; the entry propagates on reconnection with its original order preserved. Conflicting histories are not silently resolved by majority: they are kept visible and sent to the panel.
+**How the chain survives failure.** No node holds the chain alone. It is replicated across Dk Network nodes and accepted by propagation: independent nodes on the route — at least three, the same threshold the network uses to authenticate modules — check the signature, the standing of the signer and the link to the previous entry before relaying it. [Living Cryptography](https://lc.drayker.org) protects the channels between them. A device can sign while disconnected; the entry propagates on reconnection with its original order preserved. Conflicting histories are not silently resolved by majority: they are kept visible and taken to a member council.
 
 **What it binds.** Before executing a decision, the operational layer — Dk Global included — checks the chain for vetoes against that decision's address and for the state of their triage. A justified veto obliges the decision to be revised until consensus; an action that ignores one is detectable by any node, because the veto and the action carry the same address. Constitutional ratifications need member signatures and independent keys that no Dk process holds: Dk Global can append a proposal to the chain, never a ratification.
 
