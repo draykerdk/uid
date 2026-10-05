@@ -4,15 +4,16 @@ component:
   name: UID
   layer: PLATFORM
   artifact_type: architecture
-  problem: Define identity, agentic delegation, and reputation architecture that separates cryptographic personhood, bounded autonomous proxies, and contextual reputation clusters without surveillance or financialization.
+  problem: Define identity, agentic delegation, and reputation architecture that separates biometric personhood, bounded autonomous proxies, and contextual reputation clusters, with the member owning their data and without financialization.
   scope:
-    - Public specification for 3-layer identity (cryptographic personhood, bounded proxy agents, and contextual reputation).
-    - Zero-knowledge proofs of authenticated presence and pairwise non-correlation.
+    - Public specification for 3-layer identity (biometric personhood, bounded proxy agents, and contextual reputation).
+    - Multi-factor biometric personhood, certified by people at enrolment and verified continuously; only UID holders access the system.
+    - Zero-knowledge proofs of credentials and pairwise non-correlation.
     - Bounded agentic delegation rules and Situated Contextual Veto.
     - Non-transferable, domain-segmented reputation clusters.
     - The veto chain, a signed, hash-linked, append-only record of vetoes with their grounds, mandate revocations, ratification signatures, triage outcomes and council conclusions, replicated over Dk Network.
   non_scope:
-    - A centralized identity provider or biometric database.
+    - A centralized identity provider or a central biometric database.
     - A monolithic social credit score or financialized reputation markets.
     - An operational application platform today.
   dependencies:
@@ -31,6 +32,7 @@ component:
     - Premature correlation of pairwise identities across distinct domains.
     - Anonymous vetoes being re-identified through the grounds they carry.
     - Fabricated or coordinated grounds passing triage and changing a decision.
+    - Biometric data used beyond what the member can see and has agreed to.
   contributions:
     availability: open
     entrypoint: https://github.com/draykerdk/uid/issues
