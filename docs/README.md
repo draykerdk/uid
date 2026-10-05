@@ -16,6 +16,8 @@ A person's standing as a member is distinct from the state of a credential. Lost
 
 Membership rests on personhood. Only a UID holder can access the system, and each UID corresponds to one living person. Personhood is established by multi-factor biometrics, certified by people at enrolment and verified continuously afterwards, which makes fabricating or duplicating members close to impossible. That is what keeps coordinated crowds of fake accounts out of the network's debates. The biometric data belongs to the member, who can see what is collected and what it is used for. It is not kept in a central database, and what other members see stays minimal, so anonymity towards them remains possible, as with the justified veto. The protocol, its threat model and recovery still have to be specified and evaluated here.
 
+UID is also the primary application of the system: the base from which the other Drayker applications are built, the super app in which DkApps run. It works as a living record of the member’s life inside Drayker, under the member’s control.
+
 ### The agent and its mandate
 
 A [Dk Personal](https://personal.drayker.org) agent may act as a proxy within permissions the member gives it. A mandate should state its scope, limits and duration, and provide a way to revoke it. Actions that exceed those limits need renewed authorisation. The agent represents the person within that mandate; constitutional authority remains with the person.
