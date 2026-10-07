@@ -28,7 +28,7 @@ A useful worked case would show a mandate being issued, used, withdrawn and chec
 
 Reputation records concern evidence of contribution within a domain. They should preserve enough context to evaluate the work and correct errors. Expertise in one field does not by itself establish authority in another, and the proposal rejects a single score purporting to measure a person's worth.
 
-The reputation of work cannot be purchased or transferred. Holding financial capacity does not buy constitutional voice. The reward is a specific kind of reputation and the one exception: contributing capacity, such as computing, or financing the network earns a transferable reputation that can give faster or priority access to resources. It never carries weight in the members’ constitutional choices. Basic support and participation rights remain independent of those records.
+The reputation of work cannot be purchased or transferred. Holding financial capacity does not buy constitutional voice. The reward is a specific kind of reputation and the one exception: contributing capacity, such as computing, or financing the network earns the only transferable reputation, which can give faster or priority access to resources. It never carries weight in the members’ constitutional choices. Basic support and participation rights remain independent of those records.
 
 ## Personal authority and review
 
