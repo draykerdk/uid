@@ -28,17 +28,17 @@ A useful worked case would show a mandate being issued, used, withdrawn and chec
 
 A mandate is one case of a general principle: every privilege in the system should be minimal, temporary, contextual and auditable. It covers only what the action needs, lasts only as long as it is needed, holds only in the context it was granted for, and can be reviewed afterwards.
 
-A privileged action follows the same sequence:
+Every privileged action follows one sequence:
 
 1. **identity** — who or what is acting is established;
 2. **permission** — the privilege held is checked against what the action requires;
 3. **authorised context** — the action is confirmed to fall within the context the permission was granted for;
 4. **action**;
 5. **record** — a high-impact action is recorded;
-6. **audit**;
-7. **review or revocation**.
+6. **audit** — matching the level of access;
+7. **review or revocation** — and the cycle starts again.
 
-Compartmentalisation, the detection of anomalous behaviour and fault tolerance belong to [Dk Network](https://dknetwork.drayker.org) and [Living Cryptography](https://lc.drayker.org).
+Compartmentalisation and operation with isolated parts, the detection of anomalous behaviour and fault tolerance belong to [Dk Network](https://dknetwork.drayker.org) and [Living Cryptography](https://lc.drayker.org).
 
 ### Contributions in context
 
@@ -62,13 +62,13 @@ A veto only protects anyone if it cannot be lost, forged or quietly ignored, and
 
 **How vetoes are weighed.** Vetoes are not counted like votes. Their grounds are weighed together: the intentions and motives each one carries, each person's relation to the decision, the certainty on each side and what the vetoes reveal in common. A person counts once, however many contexts they belong to. Many vetoes repeating the same grounds add weight to those grounds, not new information. And one veto can be enough: when its grounds bring information beyond the scope considered before the decision was taken, it can by itself lead to an adjustment — an exception, a narrower scope, a new test or the revision of the rule.
 
-**From veto to adjustment.** A contextual veto reaches an adjustment through a rite, in this order:
+**From veto to adjustment.** A contextual veto reaches an adjustment through a rite that makes it possible to:
 
-1. **delimit the veto** — state exactly what it contests;
-2. **situate its reach** — which action, who is affected, what interrupting it would cost others;
-3. **examine the effects in dispute**;
-4. **look for another way to fulfil the common purpose**;
-5. **adjust** — by an exception, a narrower scope, a new test or the revision of the rule.
+- **situate its reach** — which action, who is affected, what interrupting it would cost others;
+- **delimit the veto** — state exactly what it contests;
+- **examine the effects in dispute**;
+- **look for another way to fulfil the common purpose**;
+- **adjust** — by an exception, a narrower scope, a new test or the revision of the rule.
 
 The advanced triage below safeguards the grounds that the rite relies on.
 
