@@ -16,6 +16,8 @@ A person's standing as a member is distinct from the state of a credential. Lost
 
 Membership rests on personhood. Only a UID holder can access the system, and each UID corresponds to one living person. Personhood is established by multi-factor biometrics, certified by people at enrolment and verified continuously afterwards, which makes fabricating or duplicating members close to impossible. That is what keeps coordinated crowds of fake accounts out of the network's debates. Whoever certifies a UID puts part of their own reputation at stake, but only for proven fraud or collusion, never for an honest error, so that the door stays open to new members. The biometric data belongs to the member, who can see what is collected and what it is used for. It is not kept in a central database, and what other members see stays minimal, so anonymity towards them remains possible, as with the justified veto. The protocol, its threat model and recovery still have to be specified and evaluated here.
 
+Rights and duties apply to the active member, who uses Drayker as their base supersystem. A member who holds a UID and does not use the network remains a member, inactive: the UID stays inactive until it is used again, Dk Personal is active only for active members, the member's state is kept, and there is no penalty.
+
 UID is also the primary application of the system: the base from which the other Drayker applications are built, the super app in which DkApps run. It works as a living record of the member’s life inside Drayker, under the member’s control.
 
 ### The agent and its mandate
@@ -42,19 +44,19 @@ Compartmentalisation and operation with isolated parts, the detection of anomalo
 
 ### Contributions in context
 
-Reputation records concern evidence of contribution within a domain. They should preserve enough context to evaluate the work and correct errors. Expertise in one field does not by itself establish authority in another, and the proposal rejects a single score purporting to measure a person's worth.
+[Contextual reputation](https://dknowledge.drayker.org/papers/main-projects/ecosystem/value-management-ecosystem#reputation) records concern evidence of contribution within a domain. They should preserve enough context to evaluate the work and correct errors. Expertise in one field does not by itself establish authority in another, and the proposal rejects a single score purporting to measure a person's worth.
 
 The reputation of work cannot be purchased or transferred. Holding financial capacity does not buy constitutional voice. The reward is a specific kind of reputation and the one exception: contributing capacity, such as computing, or financing the network earns the only transferable reputation, which can give faster or priority access to resources. It never carries weight in the members’ constitutional choices. Basic support and participation rights remain independent of those records.
 
 ## Personal authority and review
 
-UID supports the member's authority over their body, private context and delegated actions. A situated refusal must be assessed in its actual scope, including any effects on other members and shared commitments. [Member councils](https://advices.drayker.org), convened for each question, are the proposed human review path for contested decisions.
+UID supports the member's authority over their body, private context and delegated actions. Each member holds an absolute veto: power over their own life and their own Dk Personal (what stays private, what Dk represents, refusing a task, leaving). It holds only within the vetoer's own sphere, and what also affects others goes through the contextual veto. A situated refusal must be assessed in its actual scope, including any effects on other members and shared commitments. [Member councils](https://advices.drayker.org), convened for each question, are the proposed human review path for contested decisions.
 
 Privacy includes room to rest, reconsider and keep personal exploration outside public attribution. The specification must explain how consent, disclosure and record correction are carried across connected systems.
 
 ## The veto chain
 
-A veto only protects anyone if it cannot be lost, forged or quietly ignored, and it only teaches the system something if it carries its reasons. The proposal records every act of constitutional authority as a signed entry in a shared, append-only chain of signatures — blockchain-style, but carried by the Drayker architecture rather than by an external token network.
+A veto only protects anyone if it cannot be lost, forged or quietly ignored, and it only teaches the system something if it carries its reasons. The proposal records every act of constitutional authority as a signed entry in a shared chain of signatures: a signed, hash-linked, append-only record, carried by the Drayker architecture rather than by an external token network.
 
 **What enters the chain.** A situated veto, a justified veto against a collective decision, the revocation of a mandate, a member's signature on a constitutional ratification, the conclusion of a [member council](https://advices.drayker.org), and the outcome of every triage described below. The contested decision is referenced by its cryptographic address: in the [Dk Network](https://dknetwork.drayker.org) architecture every function, module and block of information already has a unique address derived from a signature, so a veto points at exactly the decision it contests.
 
