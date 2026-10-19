@@ -4,13 +4,13 @@ component:
   name: UID
   layer: PLATFORM
   artifact_type: architecture
-  problem: Define identity, agentic delegation, and reputation architecture that separates biometric personhood, bounded autonomous proxies, and contextual reputation clusters, with the member owning their data and without financialization.
+  problem: Define identity, agentic delegation, and reputation architecture that separates biometric personhood, bounded autonomous proxies, and contextual reputation, with the member owning their data and without financialization.
   scope:
     - Public specification for 3-layer identity (biometric personhood, bounded proxy agents, and contextual reputation).
-    - Multi-factor biometric personhood, certified by people at enrolment and verified continuously; only UID holders access the system.
+    - Multi-factor biometric personhood, certified by people at enrolment and verified continuously; once the network is running, only UID holders access the system.
     - Zero-knowledge proofs of credentials and pairwise non-correlation.
-    - Bounded agentic delegation rules and Situated Contextual Veto.
-    - "Non-transferable, domain-segmented reputation clusters, and the reward: the only transferable reputation, earned by contributing capacity or by financing the network, which gives faster or priority access to resources."
+    - Bounded agentic delegation rules, the absolute veto over one's own life and Dk Personal, and the justified contextual veto over decisions that directly affect the member's life and context.
+    - "Non-transferable contextual reputation, evaluated by domain, and the reward: the only transferable reputation, earned by contributing capacity or by financing the network, which gives faster or priority access to resources."
     - The veto chain, a signed, hash-linked, append-only record of vetoes with their grounds, mandate revocations, ratification signatures, triage outcomes and council conclusions, replicated over Dk Network.
   non_scope:
     - A centralized identity provider or a central biometric database.
@@ -39,4 +39,4 @@ component:
   source_of_truth:
     repository: https://github.com/draykerdk/uid
     path: README.md
-  last_reviewed: "2026-09-25"
+  last_reviewed: "2026-10-19"
