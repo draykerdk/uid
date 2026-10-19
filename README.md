@@ -14,7 +14,9 @@ The identity layer should let a member authenticate and demonstrate the credenti
 
 A person's standing as a member is distinct from the state of a credential. Lost keys, compromised devices and contested access require recovery and human recourse. Automated enforcement must not become a way to erase the person or make their basic rights contingent on a technical record.
 
-Membership rests on personhood. Only a UID holder can access the system, and each UID corresponds to one living person. Personhood is established by multi-factor biometrics, certified by people at enrolment and verified continuously afterwards, which makes fabricating or duplicating members close to impossible. That is what keeps coordinated crowds of fake accounts out of the network's debates. The biometric data belongs to the member, who can see what is collected and what it is used for. It is not kept in a central database, and what other members see stays minimal, so anonymity towards them remains possible, as with the justified veto. The protocol, its threat model and recovery still have to be specified and evaluated here.
+Membership rests on personhood. Only a UID holder can access the system, and each UID corresponds to one living person. Personhood is established by multi-factor biometrics, certified by people at enrolment and verified continuously afterwards, which makes fabricating or duplicating members close to impossible. That is what keeps coordinated crowds of fake accounts out of the network's debates. Whoever certifies a UID puts part of their own reputation at stake, but only for proven fraud or collusion, never for an honest error, so that the door stays open to new members. The biometric data belongs to the member, who can see what is collected and what it is used for. It is not kept in a central database, and what other members see stays minimal, so anonymity towards them remains possible, as with the justified veto. The protocol, its threat model and recovery still have to be specified and evaluated here.
+
+Rights and duties apply to the active member, who uses Drayker as their base supersystem. A member who holds a UID and does not use the network remains a member, inactive: the UID stays inactive until it is used again, Dk Personal is active only for active members, the member's state is kept, and there is no penalty.
 
 UID is also the primary application of the system: the base from which the other Drayker applications are built, the super app in which DkApps run. It works as a living record of the member’s life inside Drayker, under the member’s control.
 
@@ -24,27 +26,53 @@ A [Dk Personal](https://personal.drayker.org) agent may act as a proxy within pe
 
 A useful worked case would show a mandate being issued, used, withdrawn and checked by another participant before a later action is accepted. That sequence must be demonstrated in the protocol, including what happens during disconnection or delayed revocation delivery.
 
+#### Least privilege and audit
+
+A mandate is one case of a general principle: every privilege in the system should be minimal, temporary, contextual and auditable. It covers only what the action needs, lasts only as long as it is needed, holds only in the context it was granted for, and can be reviewed afterwards.
+
+Every privileged action follows one sequence:
+
+1. **identity** — who or what is acting is established;
+2. **permission** — the privilege held is checked against what the action requires;
+3. **authorised context** — the action is confirmed to fall within the context the permission was granted for;
+4. **action**;
+5. **record** — a high-impact action is recorded;
+6. **audit** — matching the level of access;
+7. **review or revocation** — and the cycle starts again.
+
+Compartmentalisation and operation with isolated parts, the detection of anomalous behaviour and fault tolerance belong to [Dk Network](https://dknetwork.drayker.org) and [Living Cryptography](https://lc.drayker.org).
+
 ### Contributions in context
 
-Reputation records concern evidence of contribution within a domain. They should preserve enough context to evaluate the work and correct errors. Expertise in one field does not by itself establish authority in another, and the proposal rejects a single score purporting to measure a person's worth.
+[Contextual reputation](https://dknowledge.drayker.org/papers/main-projects/ecosystem/value-management-ecosystem#reputation) records concern evidence of contribution within a domain. They should preserve enough context to evaluate the work and correct errors. Expertise in one field does not by itself establish authority in another, and the proposal rejects a single score purporting to measure a person's worth.
 
 The reputation of work cannot be purchased or transferred. Holding financial capacity does not buy constitutional voice. The reward is a specific kind of reputation and the one exception: contributing capacity, such as computing, or financing the network earns the only transferable reputation, which can give faster or priority access to resources. It never carries weight in the members’ constitutional choices. Basic support and participation rights remain independent of those records.
 
 ## Personal authority and review
 
-UID supports the member's authority over their body, private context and delegated actions. A situated refusal must be assessed in its actual scope, including any effects on other members and shared commitments. [Member councils](https://advices.drayker.org), convened for each question, are the proposed human review path for contested decisions.
+UID supports the member's authority over their body, private context and delegated actions. Each member holds an absolute veto: power over their own life and their own Dk Personal (what stays private, what Dk represents, refusing a task, leaving). It holds only within the vetoer's own sphere, and what also affects others goes through the contextual veto. A situated refusal must be assessed in its actual scope, including any effects on other members and shared commitments. [Member councils](https://advices.drayker.org), convened for each question, are the proposed human review path for contested decisions.
 
 Privacy includes room to rest, reconsider and keep personal exploration outside public attribution. The specification must explain how consent, disclosure and record correction are carried across connected systems.
 
 ## The veto chain
 
-A veto only protects anyone if it cannot be lost, forged or quietly ignored, and it only teaches the system something if it carries its reasons. The proposal records every act of constitutional authority as a signed entry in a shared, append-only chain of signatures — blockchain-style, but carried by the Drayker architecture rather than by an external token network.
+A veto only protects anyone if it cannot be lost, forged or quietly ignored, and it only teaches the system something if it carries its reasons. The proposal records every act of constitutional authority as a signed entry in a shared chain of signatures: a signed, hash-linked, append-only record, carried by the Drayker architecture rather than by an external token network.
 
 **What enters the chain.** A situated veto, a justified veto against a collective decision, the revocation of a mandate, a member's signature on a constitutional ratification, the conclusion of a [member council](https://advices.drayker.org), and the outcome of every triage described below. The contested decision is referenced by its cryptographic address: in the [Dk Network](https://dknetwork.drayker.org) architecture every function, module and block of information already has a unique address derived from a signature, so a veto points at exactly the decision it contests.
 
 **A veto comes with its grounds.** Every veto carries its real justification: the intention and the motives behind it, the scope it claims — which action, who is affected, what interrupting it would cost others — and the facts or conditions it rests on. A veto without reasons teaches the system nothing; a veto with reasons can reveal a condition no data showed. The author can stay anonymous: the entry proves that its signer is a member with standing in the affected context without revealing who they are. Anonymity protects the person, never the absence of reasons. Where the grounds touch someone's body, home or private context, those details can be sealed so that only the triage examining them can read them — they are still weighed.
 
 **How vetoes are weighed.** Vetoes are not counted like votes. Their grounds are weighed together: the intentions and motives each one carries, each person's relation to the decision, the certainty on each side and what the vetoes reveal in common. A person counts once, however many contexts they belong to. Many vetoes repeating the same grounds add weight to those grounds, not new information. And one veto can be enough: when its grounds bring information beyond the scope considered before the decision was taken, it can by itself lead to an adjustment — an exception, a narrower scope, a new test or the revision of the rule.
+
+**From veto to adjustment.** A contextual veto reaches an adjustment through a rite that makes it possible to:
+
+- **situate its reach** — which action, who is affected, what interrupting it would cost others;
+- **delimit the veto** — state exactly what it contests;
+- **examine the effects in dispute**;
+- **look for another way to fulfil the common purpose**;
+- **adjust** — by an exception, a narrower scope, a new test or the revision of the rule.
+
+The advanced triage below safeguards the grounds that the rite relies on.
 
 **Advanced triage.** Because a single well-founded veto can change a decision, its grounds pass through safeguards before they do:
 
@@ -70,7 +98,7 @@ The triage outcome is appended to the chain with its own reasons, so whoever vet
 
 ## What needs to be demonstrated
 
-The published architecture requires protocol work and evaluation. Priority cases are credential recovery, bounded delegation and revocation, selective disclosure, resistance to correlation, correction of a contextual contribution record, and one veto carried end to end: signed offline with its grounds, propagated, checked by independent nodes, triaged, and honoured by the layer that would have executed the contested decision. Each needs explicit assumptions, failure cases and an accessible review path.
+The published architecture requires protocol work and evaluation. Priority cases are credential recovery, bounded delegation and revocation, selective disclosure, resistance to correlation, correction of a contextual contribution record, resistance to collusion among validators — a validation weighs more when it comes from independent contexts (see [Reputation](https://dknowledge.drayker.org/papers/main-projects/ecosystem/value-management-ecosystem#reputation) in the economy of capacity) — and one veto carried end to end: signed offline with its grounds, propagated, checked by independent nodes, triaged, and honoured by the layer that would have executed the contested decision. Each needs explicit assumptions, failure cases and an accessible review path.
 
 ## Participation and sources
 
