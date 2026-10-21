@@ -10,7 +10,7 @@ component:
     - Multi-factor biometric personhood, certified by people at enrolment and verified continuously; once the network is running, only UID holders access the system.
     - Zero-knowledge proofs of credentials and pairwise non-correlation, including proof of a credential to services outside Drayker without access to personal data.
     - Collective identities of projects, organizations and clinics, formed by the UIDs of the members who compose them; a UID always corresponds to one living person.
-    - Bounded agentic delegation rules, the absolute veto over one's own life and Dk Personal, and the justified contextual veto over decisions that directly affect the member's life and context.
+    - Bounded agentic delegation rules, the absolute veto over one's own life and one's own personal Dk, and the justified contextual veto over decisions that directly affect the member's life and context.
     - "Non-transferable contextual reputation, evaluated by domain, and the reward: the only transferable reputation, earned by contributing capacity or by financing the network, which gives faster or priority access to resources."
     - The veto chain, a signed, hash-linked, append-only record of vetoes with their grounds, mandate revocations, ratification signatures, triage outcomes and council conclusions, replicated over Dk Network.
   non_scope:
@@ -40,4 +40,4 @@ component:
   source_of_truth:
     repository: https://github.com/draykerdk/uid
     path: README.md
-  last_reviewed: "2026-10-19"
+  last_reviewed: "2026-10-21"
