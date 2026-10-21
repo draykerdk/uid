@@ -50,7 +50,7 @@ The reputation of work cannot be purchased or transferred. Holding financial cap
 
 ## Personal authority and review
 
-UID supports the member's authority over their body, private context and delegated actions. Each member holds an absolute veto: power over their own life and their own personal Dk (what stays private, what Dk represents, refusing a task, leaving). It holds only within the vetoer's own sphere, and what also affects others goes through the contextual veto. A situated refusal must be assessed in its actual scope, including any effects on other members and shared commitments. [Member councils](https://advices.drayker.org), convened for each question, are the proposed human review path for contested decisions.
+UID supports the member's authority over their body, private context and delegated actions. Each member holds an absolute veto: power over their own life and their own personal Dk (what stays private, what Dk represents, refusing a task, leaving). It holds only within the vetoer's own sphere, and what also affects others goes through the contextual veto. A contextual veto must be assessed in its actual scope, including any effects on other members and shared commitments. [Member councils](https://advices.drayker.org), convened for each question, are the proposed human review path for contested decisions.
 
 Privacy includes room to rest, reconsider and keep personal exploration outside public attribution. The specification must explain how consent, disclosure and record correction are carried across connected systems.
 
